@@ -7,7 +7,7 @@ object ConfigLoader {
     private val props = Properties()
 
     init {
-        val file = File("config/client.properties")
+        val file = File("config/client.properties") // momentáneo para guardar el número de aula
         if (!file.exists()) throw RuntimeException("Config file no encontrado en ${file.absolutePath}")
         props.load(file.inputStream())
     }

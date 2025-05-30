@@ -4,8 +4,8 @@ data class ConnectionReport(
     val uid: String,
     val room: String,
     val hostname: String,
-    val user: String,             // Usuario actual (En caso de obtener nombre de la Avi)
-    val activeConnections: List<String>,  // Lista de dominios o IPs conectadas
-    val timestamp: Long,         // Momento del envío
+    val user: String,             // user actual (En caso de obtener nombre de la Avi, si no el del desktop)
+    val activeConnections: List<String>,  // dominios
+    val timestamp: Long,         // momento del envío
     val activeApps: List<String> // procesos abiertos
 )
