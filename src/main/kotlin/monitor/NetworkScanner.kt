@@ -37,6 +37,7 @@ object NetworkScanner {
             }
         }
         executor.shutdown()
+
         return result
     }
 
